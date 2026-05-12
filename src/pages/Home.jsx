@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
 import slideImage from "../Images/Hero.webp";
 import "../CSS/HeroSection.css";
 
 const HeroSlider = () => {
   const [step, setStep] = useState(0);
-  const navigate = useNavigate();
 
   // Auto change every 4 sec
   useEffect(() => {
