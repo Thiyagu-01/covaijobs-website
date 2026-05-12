@@ -63,7 +63,7 @@ const Account = () => {
            <div className="table-row">
           <div className="table-label">Profile</div>
           <div className="table-value">
-            <a href="#" className="profile-link">
+            <a href="/" className="profile-link">
               Link
             </a>
           </div>

@@ -99,7 +99,7 @@ const ContactSection = () => {
           <h2 className="highlight-title">Essential IT Staff Augmentation Services in Coimbatore</h2>
           <p className="desc">
             Staff augmentation helps organizations scale quickly by providing expert talent without long-term commitments.
-            <a href="#" className="link-text"> Orca Infomatics </a>staff augmentation allows access to experienced professionals for peak demand.
+            <a href="/" className="link-text"> Orca Infomatics </a>staff augmentation allows access to experienced professionals for peak demand.
           </p>
           <p className="desc">
             Gain specific skill sets tailored to your project timeline and goals to increase overall efficiency.
