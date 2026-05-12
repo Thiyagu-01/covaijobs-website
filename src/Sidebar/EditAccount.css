@@ -1,0 +1,118 @@
+.edit-account-container {
+  width: 100%;
+  background: #ffffff;
+}
+
+.page-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* TABLE */
+.edit-table {
+  border: 1px solid #dcdcdc;
+  width: 100%;
+}
+
+/* ROW */
+.table-row {
+  display: flex;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+/* LAST NORMAL ROW */
+.table-row:last-of-type {
+  border-bottom: none;
+}
+
+/* LEFT COLUMN */
+.table-label {
+  width: 260px;
+  padding: 14px 16px;
+  border-right: 1px solid #dcdcdc;
+  font-weight: 700;
+  background: #fff;
+}
+
+/* RIGHT COLUMN */
+.table-value {
+  flex: 1;
+  padding: 14px 16px;
+}
+
+.table-value input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  background: transparent;
+}
+
+/* GREEN MESSAGE ROW */
+.table-message {
+  background-color: #138d75;
+  color: #fff;
+  padding: 12px 16px;
+  font-size: 14px;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+/* BUTTONS */
+.table-buttons {
+  padding: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.btn-save {
+  background: #4da3ff;
+  color: #fff;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-save:hover {
+  background: #2e86de;
+}
+
+.btn-back {
+  background: #ffc107;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-back:hover {
+  background: #e0a800;
+}
+/* Gender alignment */
+.table-value label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Smaller radio buttons */
+.table-value input[type="radio"] {
+  width: 19px;
+  height: 19px;
+  accent-color: #4da3ff;   /* Blue selected color */
+  cursor: pointer;
+}
+/* MOBILE – STILL 2 COLUMN */
+@media (max-width: 768px) {
+  .table-label {
+    width: 160px;
+    font-size: 13px;
+  }
+
+  .table-value input {
+    font-size: 13px;
+  }
+}

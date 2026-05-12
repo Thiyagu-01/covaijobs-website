@@ -1,0 +1,131 @@
+/* Full page wrapper */
+.job-page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: #ffffff;
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+/* Center content */
+.job-container {
+  width: 720px;
+}
+
+/* Heading */
+.job-heading {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+/* Language text */
+.job-language {
+  font-size: 16px;
+  color: #595959;
+  margin-bottom: 30px;
+}
+
+.edit-icon {
+  margin-left: 8px;
+  cursor: pointer;
+  color: #2557a7;
+}
+
+.edit-icon:hover {
+  text-decoration: underline;
+}
+
+/* Divider */
+.divider {
+  height: 1px;
+  background: #e5e5e5;
+  margin: 35px 0;
+}
+
+/* Form group */
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.sub-text {
+  display: block;
+  font-size: 14px;
+  color: #6f6f6f;
+  margin-bottom: 8px;
+}
+
+/* Inputs */
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 8px;
+  border: 1px solid #c7c7c7;
+  font-size: 16px;
+  outline: none;
+  background: white;
+}
+
+/* Focus effect */
+.form-group input:focus,
+.form-group select:focus {
+  border: 2px solid #2557a7;
+}
+
+/* Buttons row */
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.back-btn {
+  background: #ffffff;              /* light grey */
+  color: #2557a7 !important;                   /* Indeed blue text */
+  border: 1px solid #d4d2d0 !important;        /* soft grey border */
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  width: 160px;
+  text-align: center;
+}
+
+.back-btn:hover {
+  background: #e6e4e2;
+}
+/* Continue button */
+.continue-btn {
+  background: #2557a7;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.continue-btn:hover {
+  background: #1e4c94;
+}
+

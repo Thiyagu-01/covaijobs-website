@@ -1,0 +1,236 @@
+/* page center */
+.exp-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+/* title */
+.exp-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 700;
+  width: 100%;
+}
+
+/* labels */
+.label {
+  font-weight: 600;
+  margin-top: 22px;
+  margin-bottom: 8px;
+  display: block;
+  font-size: 14px;
+  width: 100%;
+}
+
+/* input fields */
+.input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* checkbox rows */
+.check-row {
+  display: flex;
+  gap: 40px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.check-sub {
+  margin-left: 26px;
+  display: grid;
+  gap: 10px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+/* checkbox and radio alignment */
+.check-row label,
+.check-sub label,
+.radio-list label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-weight: normal;
+}
+
+/* Custom checkbox styling */
+.check-row input[type="checkbox"],
+.check-sub input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  cursor: pointer;
+}
+
+/* Radio list for commitment and notice period */
+.radio-list {
+  display: grid;
+  gap: 12px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.radio-list label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Custom radio button styling */
+.radio-list input[type="radio"] {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  cursor: pointer;
+}
+
+/* Inline input for notice period */
+.inline-input {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.small-input {
+  width: 60px;
+  padding: 6px 8px;
+  border: 1px solid #d0d5dd;
+  border-radius: 6px;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Radio cards */
+.radio-cards {
+  display: grid;
+  gap: 16px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.radio-card {
+  border: 1px solid #d0d5dd;
+  border-radius: 10px;
+  padding: 18px;
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.radio-card input {
+  margin-top: 4px;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.card-title {
+  font-weight: 700;
+  margin-bottom: 4px;
+  font-size: 16px;
+}
+
+.radio-card p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.radio-card.active {
+  border: 2px solid #1f6fff;
+  background: #f4f8ff;
+}
+
+/* Remove default radio button styling */
+input[type="radio"],
+input[type="checkbox"] {
+  accent-color: #1f6fff;
+}
+
+/* Footer buttons */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding-top: 20px;
+  background-color: #ffffff19;
+  /* border-top: 1px solid #eaeaea; */
+  width: 100%;
+}
+
+.back, .next {
+  padding: 12px 32px;
+  width: 140px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.back {
+  background-color: rgba(2, 2, 2, 0.478);
+  border: 1px solid #d0d5dd;
+  color: #ffffff;
+}
+
+.back:hover {
+  background-color: rgba(2, 2, 2, 0.478);
+  border-color: #9ca3af;
+}
+
+.next {
+  background-color: #1f6fff;
+  color: white;
+}
+
+.next:hover {
+  background-color: #0052cc;
+}
+/* Notice period rows */
+.notice-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+/* prevent label wrapping badly */
+.notice-row span {
+  white-space: nowrap;
+}
+
+/* number box size like screenshot */
+.notice-number {
+  width: 70px;
+  height: 34px;
+  padding: 4px 8px;
+  border: 1px solid #cfd4dc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* radio vertical alignment */
+.notice-row input[type="radio"] {
+  margin: 0;
+  transform: translateY(-1px);
+}
+
+
+
+

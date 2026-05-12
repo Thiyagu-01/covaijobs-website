@@ -1,0 +1,127 @@
+/* ===== PAGE WRAPPER ===== */
+
+.profile-step-wrapper {
+  width: 100%;
+  min-height: calc(100vh - 120px);
+  padding: 40px 60px;
+  background: #ffffff;
+}
+
+/* ===== TITLE ===== */
+.profile-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 300px;
+  color: black;
+  margin-bottom: 32px;
+}
+
+/* ===== FORM ===== */
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
+
+/* ===== FORM ROW ===== */
+.form-row {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== LABEL ===== */
+.form-row label {
+  font-size: 16px;
+  font-weight: 530;
+  color: #000000;
+  margin-bottom: 6px;
+}
+
+/* ===== INPUT & SELECT ===== */
+.form-row input,
+.form-row select {
+  width: 400px;
+  height: 44px;
+  padding: 0 14px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  font-size: 14px;
+  outline: none;
+  background-color: #fff;
+}
+
+.form-row input::placeholder {
+  color: #9ca3af;
+}
+
+.form-row input:focus,
+.form-row select:focus {
+  border-color: #4f6ef7;
+}
+
+/* ===== RADIO GROUP ===== */
+.radio-group {
+  display: flex;
+  gap: 32px;
+  margin-top: 6px;
+}
+
+/* Hide default radio */
+.radio-item input {
+  display: none;
+}
+
+/* Radio label */
+.radio-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #111;
+  cursor: pointer;
+}
+
+/* Custom radio circle */
+.radio-dot {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #4f6ef7;
+  border-radius: 50%;
+  position: relative;
+}
+
+/* Filled dot when selected */
+.radio-item input:checked + .radio-dot::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #4f6ef7;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ===== FOOTER ===== */
+.step-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 40px;
+}
+
+/* ===== NEXT BUTTON ===== */
+.next-btn {
+  background: #4f6ef7;
+  color: #ffffff;
+  border: none;
+  padding: 10px 40px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.next-btn:hover {
+  background: #3f5de0;
+}

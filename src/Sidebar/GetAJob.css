@@ -1,0 +1,111 @@
+.form-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.form-box {
+  width: 100%;
+  max-width: 720px;
+}
+
+h1 {
+  font-size: 44px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.job-link {
+  color: #2557a7;
+  text-decoration: none;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+
+.form-group {
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.sub-text {
+  font-size: 13px;
+  color: #595959;
+  margin-bottom: 8px;
+}
+
+input,
+select {
+  height: 52px;
+  border: 1px solid #949494;
+  border-radius: 8px;
+  padding: 0 14px;
+  font-size: 15px;
+}
+
+input:focus,
+select:focus {
+  border: 2px solid #2557a7;
+  outline: none;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+}
+
+.row .form-group {
+  flex: 1;
+}
+
+/* PHONE FIX */
+
+.phone-container {
+  width: 100%;
+}
+
+.phone-input {
+  width: 100% !important;
+  height: 52px !important;
+  border-radius: 8px !important;
+  border: 1px solid #949494 !important;
+}
+
+.phone-input:focus {
+  border: 2px solid #2557a7 !important;
+}
+
+.checkbox-area {
+  display: flex;
+  gap: 10px;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  accent-color: #164081;
+  margin-top: 5px;
+}
+.button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 40px;
+}
+
+.continue-btn {
+  background: #164081;
+  color: white;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 24px;
+  font-weight: 600;
+  cursor: pointer;
+}
+

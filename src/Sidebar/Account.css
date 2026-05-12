@@ -1,0 +1,150 @@
+.account-container {
+  width: 100%;
+  min-height: 100%;
+  background: #ffffff;
+}
+
+/* Header */
+.account-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.account-header h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Edit Button */
+.edit-btn {
+  background-color: #4da3ff;
+  color: #fff;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.edit-btn:hover {
+  background-color: #2e86de;
+}
+
+/* Table Wrapper */
+.account-table {
+  width: 100%;
+  border: 1px solid #dcdcdc;
+  overflow-x: auto;   /* important for mobile */
+}
+
+/* Each Row */
+.table-row {
+  display: flex;
+  border-bottom: 1px solid #dcdcdc;
+  min-width: 500px;   /* prevents breaking columns */
+}
+
+.table-row:last-child {
+  border-bottom: none;
+}
+
+/* Left Column */
+.table-label {
+  width: 260px;
+  padding: 14px 16px;
+  border-right: 1px solid #dcdcdc;
+  font-weight: 700;   /* BOLD labels */
+}
+
+/* Right Column */
+.table-value {
+  flex: 1;
+  padding: 14px 16px;
+  word-break: break-word;
+}
+
+/* Referral Style */
+.referral {
+  color: #2e86de;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+/* Profile Link */
+.profile-link {
+  color: #2e86de;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.profile-link:hover {
+  text-decoration: underline;
+}
+
+/* Toggle Switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 22px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  background-color: #ccc;
+  border-radius: 22px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.3s;
+}
+
+.slider:before {
+  content: "";
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  left: 2px;
+  bottom: 2px;
+  background: white;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+input:checked + .slider {
+  background-color: #4da3ff;
+}
+
+input:checked + .slider:before {
+  transform: translateX(23px);
+}
+
+/* ===============================
+   MOBILE RESPONSIVE
+================================= */
+
+@media (max-width: 768px) {
+
+  .account-header h2 {
+    font-size: 20px;
+  }
+
+  .table-label {
+    width: 180px;   /* smaller left column */
+  }
+
+  .table-row {
+    min-width: 400px;
+  }
+
+}

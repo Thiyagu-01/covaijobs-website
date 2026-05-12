@@ -1,0 +1,62 @@
+ .topbar {
+  height: 60px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+
+.topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.page-title {
+ 
+  color: #000;
+  margin:0;
+  font-size: 18px;
+  margin-top: 22px!important;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #333;
+}
+
+.icon-btn:hover {
+  color: #5b73f2;
+}
+
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.icon-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notification-icon {
+  font-size: 24px;
+  color: #555;
+}
+
+.icon-btn:hover .notification-icon {
+  color: #000;
+} 
+ 

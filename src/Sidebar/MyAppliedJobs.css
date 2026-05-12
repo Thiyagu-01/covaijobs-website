@@ -1,0 +1,216 @@
+/* ===== WRAPPER ===== */
+.applied-jobs-wrapper {
+  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100%;
+}
+
+/* ===== PAGE HEADER ===== */
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.page-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0;
+}
+
+.breadcrumb {
+  font-size: 18px;
+  color: #6b7280;
+}
+
+.breadcrumb-link {
+  color: #2563eb;
+}
+
+/* ===== TABLE CARD ===== */
+.table-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+/* ===== TABLE CONTROLS ===== */
+.table-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.table-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.table-search label {
+  font-size: 15px;
+  color: #374151;
+}
+
+.table-search input {
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  padding: 5px 10px;
+  font-size: 13px;
+  outline: none;
+  width: 180px;
+  transition: border-color 0.2s;
+}
+
+.table-search input:focus {
+  border-color: #2563eb;
+}
+
+.table-entries {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+}
+
+.table-entries span {
+  font-size: 13px;
+  color: #374151;
+}
+
+.table-entries select {
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  padding: 6px 6px;
+  font-size: 13px;
+  outline: none;
+  cursor: pointer;
+}
+
+/* ===== TABLE ===== */
+.applied-jobs-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.applied-jobs-table thead tr {
+  background: #f8fafc;
+}
+
+.applied-jobs-table th {
+  padding: 11px 16px;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+  border-bottom: 1px solid #e5e7eb;
+  white-space: nowrap;
+}
+
+.sort-icon {
+  color: #9ca3af;
+  font-size: 13px;
+  margin-left: 4px;
+}
+
+.applied-jobs-table td {
+  padding: 13px 16px;
+  font-size: 13px;
+  color: #374151;
+  vertical-align: middle;
+}
+
+.job-row {
+  border-bottom: 1px solid #f1f5f9;
+  transition: background 0.15s;
+}
+
+.job-row:hover {
+  background: #f8fafc;
+}
+
+/* ===== EMPTY STATE ===== */
+.empty-message {
+  text-align: center;
+  padding: 40px 16px !important;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* ===== ACTION BUTTONS ===== */
+.action-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.btn-action {
+  border: 1px solid #e2e8f0;
+  background: #fff;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #64748b;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+
+.btn-action:hover {
+  background: #f1f5f9;
+  border-color: #cbd5e1;
+  color: #1e293b;
+}
+
+.btn-action.btn-delete:hover {
+  background: #fef2f2;
+  border-color: #fca5a5;
+  color: #ef4444;
+}
+
+/* ===== TABLE FOOTER ===== */
+.table-footer {
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #f1f5f9;
+}
+
+.table-footer-info {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.pagination {
+  display: flex;
+  gap: 4px;
+}
+
+.btn-page {
+  border: 1px solid #d1d5db;
+  background: #fff;
+  color: #374151;
+  border-radius: 4px;
+  padding: 5px 13px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.btn-page:hover {
+  background: #f1f5f9;
+}
+
+.btn-page.active {
+  background: #2563eb;
+  color: #fff;
+  border-color: #2563eb;
+  font-weight: 700;
+}

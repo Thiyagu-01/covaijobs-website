@@ -1,0 +1,84 @@
+/* Overlay */
+.indeed-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(45, 45, 45, 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+/* Modal Box */
+.indeed-modal {
+  background: #ffffff;
+  width: 460px;
+  border-radius: 12px;
+  padding: 32px 28px 28px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  animation: scaleIn 0.2s ease-in-out;
+}
+
+/* Close Button */
+.indeed-close {
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  background: transparent;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #2d2d2d;
+}
+
+/* Title */
+.indeed-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #2d2d2d;
+}
+
+/* Illustration */
+.indeed-illustration {
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+
+/* Text */
+.indeed-text {
+  font-size: 15px;
+  color: #595959;
+  margin-bottom: 24px;
+}
+
+/* Button */
+.indeed-button {
+  background: #2557a7;
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.indeed-button:hover {
+  background: #1f4aa0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from { transform: scale(0.95); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}

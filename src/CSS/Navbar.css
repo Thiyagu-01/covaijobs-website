@@ -1,0 +1,137 @@
+.custom-navbar {
+  background-color: #ffffff;
+  padding: 10px 20px;
+}
+
+.navbar-logo {
+  height: 65px;
+  width: auto;
+  object-fit: contain;
+}
+
+#desktopProfileDropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  min-width: 200px;
+  z-index: 999;
+}
+
+#desktopProfileDropdown.show {
+  display: block;
+}
+
+.profile-link {
+  cursor: pointer;
+  user-select: none;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+}
+
+.navbar {
+  position: relative;
+  z-index: 1000;
+}
+
+.dropdown-menu {
+  position: absolute;
+  z-index: 2000;
+}
+
+.nav-link {
+  position: relative;
+  font-weight: 500;
+  gap: 40px;
+  color: #333 !important;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0d6efd;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.profile-link:hover::after {
+  width: 100%;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.profile-nav {
+  margin-left: auto;
+  position: relative;
+}
+
+/* Dropdown (desktop only) */
+.dropdown-menu {
+  min-width: 180px;
+  border-radius: 8px;
+  font-size: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: none;
+  background: white;
+}
+
+.dropdown-menu.show {
+  display: block;
+  z-index: 1050;
+}
+
+/* Laptop view: Increase gap between nav items */
+@media (min-width: 992px) {
+  .custom-nav-item {
+    margin-left: 25px; /* Increased gap */
+  }
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    justify-content: flex-end !important;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .custom-nav-list {
+    width: 100%;
+    text-align: right;
+    padding-right: 20px;
+  }
+
+  .custom-nav-item {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+  }
+
+  .custom-nav-item .nav-link {
+    display: inline-block;
+    width: auto;
+    color: #333 !important;
+    font-size: 16px;
+  }
+
+  .nav-link::after {
+    bottom: -3px;
+  }
+}

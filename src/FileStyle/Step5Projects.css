@@ -1,0 +1,133 @@
+
+
+/* ===== Page Wrapper ===== */
+.projects-wrapper {
+  max-width: 1200px;
+  margin: 30px auto 140px;
+  padding: 30px 40px;
+  background: #fff;
+  border-radius: 12px;
+}
+
+/* ===== Title ===== */
+.page-title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+/* ===== Project Card ===== */
+.project-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+  background: #fafafa;
+}
+
+/* ===== Grid Layouts ===== */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+/* ===== Inputs ===== */
+input,
+textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.full-width {
+  width: 100%;
+  margin-top: 12px;
+}
+
+/* ===== Note ===== */
+.note {
+  font-size: 12px;
+  color: #6b7280;
+  margin-top: 6px;
+}
+
+/* ===== Actions ===== */
+.project-actions {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+/* Remove */
+.btn-remove {
+  background: #9f2f2f;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Add */
+.btn-add {
+  background: #1f73d2;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+
+/* Back */
+.btn-back {
+  background: #3a3a3a;
+  color: #fff;
+  border: none;
+  padding: 12px 36px;
+  border-radius: 6px;
+}
+
+/* Next */
+.btn-next {
+  background: #1f73d2;
+  color: #fff;
+  border: none;
+  padding: 12px 36px;
+  border-radius: 6px;
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 768px) {
+  .grid-2,
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .bottom-nav {
+    padding: 12px 16px;
+  }
+}
+
+
+

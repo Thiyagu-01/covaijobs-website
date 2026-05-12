@@ -1,0 +1,222 @@
+/* Auth container */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 20px 40px;
+  background-color: #f4f6f9;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+/* Remove problematic negative margin */
+.login-page {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Error styling */
+.is-invalid {
+  border: 1px solid #dc3545 !important;
+}
+
+.error-msg {
+  color: #dc3545;
+  font-size: 0.85rem;
+  margin-top: 2px;
+}
+
+/* Auth form box */
+.auth-form {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 450px;
+}
+
+/* Title */
+.auth-title {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Input group */
+.input-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 40px 12px 14px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 10px !important;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+}
+
+/* Password wrapper */
+.password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding: 12px 40px 12px 14px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.password-wrapper input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+}
+
+/* Toggle password icon */
+.toggle-password {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #555;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.toggle-password:hover {
+  color: #111;
+}
+
+/* Submit Button */
+.auth-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #4a90e2;
+  color: white;
+  font-size: 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.auth-btn:hover {
+  background-color: #357bd8;
+}
+
+/* Message */
+.account-message {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.link-text {
+  color: #4a90e2;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.link-text:hover {
+  color: #357bd8;
+}
+
+/* Forgot Password */
+.forgot-password {
+  text-align: right;
+  font-size: 0.9rem;
+  margin-bottom: 16px;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .auth-form {
+    padding: 25px 20px;
+  }
+
+  .auth-title {
+    font-size: 20px;
+  }
+
+  .auth-btn {
+    font-size: 14px;
+  }
+
+  .input-group label {
+    font-size: 13px;
+  }
+
+  .input-group input,
+  .password-wrapper input {
+    font-size: 13px;
+  }
+}.phone-input-wrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  background-color: #fff;
+}
+
+.phone-input-wrapper:focus-within {
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+}
+
+.phone-input-wrapper .country-code {
+  background-color: #f1f1f1;
+  padding: 12px 14px;
+  font-size: 14px;
+  color: #555;
+  border-right: 1px solid #ccc;
+  white-space: nowrap;
+}
+
+.phone-input-wrapper input {
+  flex: 1;
+  padding: 12px 14px;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+@media (max-width: 480px) {
+  .phone-input-wrapper .country-code {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+
+  .phone-input-wrapper input {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+}
+

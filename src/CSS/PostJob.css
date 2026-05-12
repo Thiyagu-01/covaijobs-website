@@ -1,0 +1,102 @@
+/* Centering Page Container */
+.job-form-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  background: #eef2f7;
+  padding: 1.4rem;
+}
+
+/* Form Wrapper */
+.job-form-wrapper {
+  padding: 1.4rem 2rem;
+  max-width: 700px;
+  width: 100%;
+  background: #f9fbfd;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.form-heading {
+  font-size: 1.8rem;
+  color: #343a40;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+
+/* Grid Layout */
+.job-form-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Inputs */
+.form-group {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.full-width {
+  flex: 1 1 100%;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #495057;
+}
+
+input,
+select,
+textarea {
+  padding: 0.7rem;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  font-size: 0.7rem;
+}
+
+/* Feedback Messages */
+.loading-text {
+  color: #007bff;
+  font-weight: 500;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.error-text {
+  color: #dc3545;
+  font-weight: 500;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.success-text {
+  color: #28a745;
+  font-weight: 500;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* Button Styling */
+.submit-container {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.submit-btn {
+  background-color: #007bff;
+  border: none;
+  padding: 0.7rem 2rem;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 25px;
+  transition: 0.3s ease-in-out;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}

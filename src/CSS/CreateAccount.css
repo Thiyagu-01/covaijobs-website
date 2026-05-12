@@ -1,0 +1,169 @@
+.ca-wrapper {
+  background: #eef5f8;
+  min-height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+.ca-container {
+  max-width: 1100px;
+  width: 100%;
+}
+
+.ca-right h1 {
+  font-size: 42px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.ca-desc {
+  max-width: 720px;
+  margin: 0 auto 28px;
+  text-align: center;
+  color: #555;
+  font-size: 16px;
+}
+
+.ca-radio {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.ca-radio label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.ca-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px 30px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.ca-form input {
+  width: 100%;
+  background: #ffffff;
+  border: none;
+  padding: 16px;
+  border-radius: 10px;
+  font-size: 14px;
+  outline: none;
+  margin-bottom: 25px;
+}
+
+.ca-actions {
+ display: flex;
+  justify-content: center;   
+  max-width: 1900px;
+  margin: 40px auto 0;
+  
+}
+
+.register-btn {
+  display: block;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 14px 44px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 40px auto 0;
+  
+/* INPUT FOCUS EFFECT */
+.ca-form input:focus {
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+  transition: box-shadow 0.2s ease;
+}
+
+/* ERROR STATE (ADD class="input-error" from React if needed) */
+.input-error {
+  border: 1.5px solid #ef4444 !important;
+  background: #fff5f5;
+}
+
+/* ERROR MESSAGE */
+.ca-error {
+  text-align: center;
+  color: #ef4444;
+  font-size: 14px;
+  margin-top: 16px;
+  font-weight: 500;
+}
+
+/* SUCCESS MESSAGE */
+.ca-success {
+  text-align: center;
+  color: #16a34a;
+  font-size: 14px;
+  margin-top: 16px;
+  font-weight: 500;
+}
+
+/* RADIO INPUT STYLE */
+.ca-radio input[type="radio"] {
+  accent-color: #2563eb;
+  cursor: pointer;
+}
+
+/* BUTTON HOVER & ACTIVE */
+.register-btn:hover {
+  background: #1e40af;
+  transform: translateY(-2px);
+  transition: all 0.2s ease;
+}
+
+.register-btn:active {
+  transform: translateY(0);
+}
+
+/* DISABLED BUTTON (OPTIONAL) */
+.register-btn:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+/* FORM SMOOTHNESS */
+.ca-form input {
+  transition: box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.error-text {
+  color: red;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+@media (max-width: 768px) {
+  .ca-right h1 {
+    font-size: 30px;
+  }
+
+  .ca-radio {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+}
+ .ca-form {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .ca-form input {
+    padding: 14px;
+  }
+
+  .register-btn {
+    width: 100%;
+  }
+}

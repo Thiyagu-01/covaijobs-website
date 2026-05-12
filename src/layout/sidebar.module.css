@@ -1,0 +1,173 @@
+/* 
+.sidebar {
+  width: 260px;
+  background-color: #5b73f2;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 12px;
+}
+
+.sidebar.collapsed {
+  width: 80px;
+  padding: 20px 10px;
+}
+.sidebar-logo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;     
+}
+
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 18px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 15px;
+  width: 100%;          
+}
+
+
+.menu-item:hover,
+.menu-item.active {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+
+.menu-icon {
+  font-size: 20px;
+  min-width: 24px;     
+  display: flex;
+  justify-content: center;
+}
+
+
+.sidebar.collapsed .menu-item {
+  justify-content: center;
+  gap: 0;
+} */
+
+/* SIDEBAR STYLES (Scoped to Dashboard Only) */
+
+/* .dashboard-layout .sidebar {
+  width: 260px;
+  background-color: #5b73f2;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 12px;
+  min-height: 100vh;
+  transition: width 0.3s ease;
+}
+
+.dashboard-layout .sidebar.collapsed {
+  width: 80px;
+  padding: 20px 10px;
+}
+
+.dashboard-layout .sidebar-logo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.dashboard-layout .sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.dashboard-layout .menu-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 18px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 15px;
+  width: 100%;
+  transition: background 0.2s ease;
+}
+
+.dashboard-layout .menu-item:hover,
+.dashboard-layout .menu-item.active {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.dashboard-layout .menu-icon {
+  font-size: 20px;
+  min-width: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.dashboard-layout .sidebar.collapsed .menu-item {
+  justify-content: center;
+  gap: 0;
+} */
+
+.sidebar {
+  width: 260px;
+  background-color: #5b73f2;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 12px;
+  min-height: 100vh;
+  transition: width 0.3s ease;
+}
+
+.collapsed {
+  width: 80px;
+  padding: 20px 10px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 18px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 15px;
+  width: 100%;
+  transition: background 0.2s ease;
+}
+
+.item:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.icon {
+  font-size: 20px;
+  min-width: 24px;
+  display: flex;
+  justify-content: center;
+}

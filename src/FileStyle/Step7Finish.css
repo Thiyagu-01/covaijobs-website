@@ -1,0 +1,128 @@
+.vendor-wrapper {
+  max-width: 1050px;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+  color: #111;
+}
+
+/* TITLES */
+.section-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 30px 0 15px;
+  margin-right: 890px;
+}
+
+/* PHOTO SECTION */
+.photo-row {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  align-items: center;
+  gap: 40px;
+}
+
+.photo-circle {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 600;
+  color: #1a2bb8;
+}
+
+.photo-content p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.photo-content .muted {
+  color: #666;
+  font-size: 13px;
+}
+
+.photo-content input {
+  margin-top: 10px;
+  background-color: rgb(249, 249, 251);
+  border: none;
+}
+
+/* PRICE */
+.section-title-1 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 30px 0 15px;
+  margin-right: 20px;
+}
+.price-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.price-row label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.price-row select,
+.price-row input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* BIO */
+.bio-section {
+  margin-top: 25px;
+  width: 700px;
+}
+
+.bio-section label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.bio-section textarea {
+  width: 100%;
+  height: 120px;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  resize: none;
+  font-size: 14px;
+}
+
+/* BUTTONS */
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.btn-back {
+  background: #888;
+  color: #fff;
+  border: none;
+  padding: 12px 35px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn-submit {
+  background: #4f6df5;
+  color: #fff;
+  border: none;
+  padding: 12px 35px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}

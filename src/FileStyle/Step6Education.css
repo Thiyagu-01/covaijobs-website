@@ -1,0 +1,110 @@
+.edu-wrapper {
+  padding: 20px;
+}
+
+h3 {
+  text-align: center;
+  margin: 30px 0 15px;
+  font-weight: 600;
+}
+
+/* ===== EDUCATION GRID ===== */
+.edu-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1.4fr 1.6fr 1fr 1fr 90px;
+  gap: 16px;
+  margin-bottom: 14px;
+  align-items: center;
+  margin-bottom: -50px;
+}
+
+/* ===== CERT GRID ===== */
+.cert-grid {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr 90px;
+  gap: 14px;
+  margin-bottom: 14px;
+  align-items: center;
+    margin-bottom: -50px;
+
+}
+
+/* ===== INPUTS ===== */
+input,
+select {
+  height: 42px;
+  padding: 0 12px;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  font-size: 14px;
+  width: 100%;
+}
+
+/* ===== ACTION BUTTON COLUMN ===== */
+.actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 6px;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* ===== BUTTONS ===== */
+.add-btn,
+.remove-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 6px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.add-btn {
+  background: #1e88e5;
+  color: white;
+}
+
+.remove-btn {
+  background: #c62828;
+  margin-top: 20px;
+  color: white;
+}
+
+.remove-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* Hide add button but keep space */
+.add-btn.hidden {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* ===== FOOTER ===== */
+.footer-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 200px;
+  background-color: rgb(255, 255, 255);
+}
+
+.back-btn,
+.next-btn {
+  padding: 12px 30px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  width: 150px;
+}
+
+.back-btn {
+  background: #898b8d;
+  color: white;
+}
+
+.next-btn {
+  background: #2563eb;
+  color: white;
+}

@@ -1,0 +1,181 @@
+/* ── Page wrapper ── */
+.hg-page {
+  min-height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 80px 24px 60px;
+  font-family: "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+/* ── Card ── */
+.hg-card {
+  width: 100%;
+  max-width: 700px;
+}
+
+/* ── Title ── */
+.hg-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 48px 250px;
+  letter-spacing: -0.02em;
+}
+
+/* ── Field group ── */
+.hg-field {
+  margin-bottom: 36px;
+}
+
+.hg-label {
+  display: block;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+.hg-required {
+  color: #d93025;
+}
+
+/* ── Select ── */
+.hg-select-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.hg-select {
+  width: 100%;
+  appearance: none;
+  -webkit-appearance: none;
+  border: 1.5px solid #c8c8c8;
+  border-radius: 6px;
+  font-size: 0.9375rem;
+  color: #1a1a1a;
+  background: #ffffff;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.hg-select:hover {
+  border-color: #2557a7;
+}
+
+.hg-select:focus {
+  border-color: #2557a7;
+  box-shadow: 0 0 0 3px rgba(37, 87, 167, 0.12);
+}
+
+/* Placeholder color */
+.hg-select:invalid {
+  color: #8a8a8a;
+}
+
+/* Dropdown options */
+.hg-select option {
+  color: #1a1a1a;
+  background-color: #ffffff;
+}
+
+/* Custom arrow */
+.hg-chevron {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.9rem;
+  color: #1a1a1a;
+  pointer-events: none;
+}
+
+/* ── Counter ── */
+.hg-counter {
+  display: flex;
+  align-items: center;
+}
+
+.hg-counter-input {
+  width: 220px;
+  border: 1.5px solid #c8c8c8;
+  border-right: none;
+  border-radius: 6px 0 0 6px;
+  padding: 14px 16px;
+  font-size: 0.9375rem;
+  color: #1a1a1a;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  /* -moz-appearance: textfield; */
+}
+
+.hg-counter-input::-webkit-outer-spin-button,
+.hg-counter-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.hg-counter-input:focus {
+  border-color: #2557a7;
+  box-shadow: 0 0 0 3px rgba(37, 87, 167, 0.12);
+  z-index: 1;
+}
+
+.hg-counter-btn {
+  width: 48px;
+  height: 45px;
+  background: #2557a7;
+  color: #fff;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.18s;
+}
+
+.hg-counter-btn:last-of-type {
+  border-radius: 0 6px 6px 0;
+}
+
+.hg-counter-btn:hover {
+  background: #1a4080;
+}
+
+.hg-counter-btn:active {
+  background: #b6c6e4;
+}
+
+/* ── Actions ── */
+.hg-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 60px;
+}
+
+.hg-continue-btn {
+  background: #2557a7;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 14px 32px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.18s, transform 0.12s;
+}
+
+.hg-continue-btn:hover {
+  background: #1a4080;
+  transform: translateX(2px);
+}
+
+.hg-continue-btn:active {
+  background: #153268;
+  transform: translateX(0);
+}
