@@ -36,7 +36,6 @@ const Navbar = () => {
 
   const handleToggleClick = () => setIsMenuOpen(!isMenuOpen);
   const handleLinkClick = () => setIsMenuOpen(false);
-  const handleLogout = () => setShowLogoutModal(true);
 
   const confirmLogout = () => {
     localStorage.removeItem("user");

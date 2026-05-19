@@ -45,7 +45,6 @@ function App() {
   {/* PUBLIC ROUTES */}
   <Route path="/" element={<HomeSlider />} />
   <Route path="/home" element={<Home />} />
-  <Route path="/view-jobs" element={<Home />} />
   <Route path="/staff-augmentation" element={<Staff />} />
   <Route path="/login" element={<Login />} />
   <Route path="/signup" element={<Signup />} />

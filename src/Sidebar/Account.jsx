@@ -63,9 +63,9 @@ const Account = () => {
            <div className="table-row">
           <div className="table-label">Profile</div>
           <div className="table-value">
-            <a href="/" className="profile-link">
+            <button className="profile-link">
               Link
-            </a>
+            </button>
           </div>
         </div>
 

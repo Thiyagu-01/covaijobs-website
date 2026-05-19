@@ -15,10 +15,10 @@ import { fetchAllJobs, deleteJob } from '../api';
 const JobList = ({ refresh }) => {
   const [jobs, setJobs] = useState([]);
   const [allJobs, setAllJobs] = useState([]);
-  const [filters, setFilters] = useState({
+  const [, setFilters] = useState({
     jobType: '', location: '', minSalary: '', maxSalary: '', title: '',
   });
-  const [isApplying, setIsApplying] = useState(false);
+  const [, setIsApplying] = useState(false);
   const [loading, setLoading] = useState(true);
   const [confirmDeleteId, setConfirmDeleteId] = useState(null);
   const navigate = useNavigate();
@@ -61,7 +61,9 @@ const JobList = ({ refresh }) => {
     });
   }, 400);
 
-  useEffect(() => () => debouncedFilter.cancel(), []);
+  useEffect(() => {
+  return () => debouncedFilter.cancel();
+  }, [debouncedFilter]);
 
   const handleFilterChange = (e) => {
     const { name, value } = e.target;

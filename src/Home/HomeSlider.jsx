@@ -3,7 +3,6 @@ import Home from '../pages/Home';
 import AboutUs from '../Home/AboutUs';
 import LogoSlider from '../Home/Logo';
 import Testimonial from './Testimonial';
-import Footer from './Footer';
 import GrowthRoadmap from './GrowthRoadmap';
 
 const HomeSlider = () => {

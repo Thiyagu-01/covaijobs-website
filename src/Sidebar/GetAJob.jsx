@@ -15,9 +15,13 @@ export default function GetAJob() {
       <div className="form-box">
         <h1>Create an employer account</h1>
         <a
-          type="button"
-          className="job-link"
-          onClick={() => setShowModal(true)}
+         href="/"
+         type="button"
+         className="job-link"
+         onClick={(e) => {
+         e.preventDefault();
+         setShowModal(true);
+        }}
         >
           I'm looking for a job →
         </a>
